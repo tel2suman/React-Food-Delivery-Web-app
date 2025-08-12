@@ -1,0 +1,121 @@
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #e3a508e3 !important;
+  -webkit-transition: all 15ms ease-in-out;
+  -moz-transition: all 15ms ease-in-out;
+  -o-transition: all 15ms ease-in-out;
+  -ms-transition: all 15ms ease-in-out;
+  transition: all 15ms ease-in-out;
+  animation-name: stickyTransition;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-name: 05s;
+  animation-fill-mode: both;
+  -webkit-box-shadow: 10px 5px 20px rgb(126 126 126 / 20%) !important;
+  -moz-box-shadow: 10px 5px 20px rgb(126 126 126 / 20%) !important;
+  box-shadow: 10px 5px 20px rgb(126 126 126 / 20%) !important;
+}
+
+@keyframes stickyTransition {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.logo {
+  max-height: 80px;
+}
+
+.nav-link {
+  display: inline-flex;
+  justify-content: center;
+  color: var(--white);
+  padding: 0 1rem !important;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--oswald-font);
+  text-transform: uppercase;
+  -webkit-transition: all 15ms ease-in-out;
+  -ms-transition: all 15ms ease-in-out;
+  -o-transition: all 15ms ease-in-out;
+  -moz-transition: all 15ms ease-in-out;
+  transition: all 15ms ease-in-out;
+}
+
+
+.nav-link:hover, .nav-link:focus {
+  color: var(--yellow) !important;
+}
+
+.nav-link.active {
+  color: var(--yellow) !important;
+}
+
+.sticky .nav-link {
+  color: var(--white);
+}
+
+.sticky .nav-link.active {
+  color: var(--black) !important;
+}
+
+.sticky .nav-link:hover, .sticky .nav-link:focus {
+  color: var(--black) !important;
+}
+
+
+ 
+.roundpoint {
+  width: 16px;
+  height: 16px;
+  font-size: 11.2px;
+  line-height: 16px;
+  text-align: center;
+  font-style: normal;
+  right: -8px;
+}
+
+
+@media (max-width: 992px) {
+
+  .navbar {
+    background-color: #e3a508e3 !important;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-toggler-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .nav-link {
+    color: var(--white) !important;
+    padding: 1rem !important;
+  }
+
+  .nav-link.active {
+    color: var(--black) !important;
+  }
+
+}
