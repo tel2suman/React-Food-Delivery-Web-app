@@ -16,6 +16,7 @@ const BurgerCards = ({image, rating, title, paragraph, price, renderRatingIcons}
                     <div className='item_rating'>{renderRatingIcons(rating)}</div>
                     <div className='wishlist'>
                         <i class="bi bi-heart-fill"></i>
+                        
                     </div>
                 </div>
 
