@@ -98,7 +98,7 @@
 
 /* Home Menu 3.0 */
 .menu_section {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 .menu_section .card-img-top {
   transition: all 500ms ease-in-out;
@@ -144,7 +144,7 @@
   background-color: var(--light-red);
   display: inline-block;
   padding: 7px 12px;
-  border-radius: 4px;
+  border-radius: 30px;
 }
 .menu_section .menu_price h5 {
   color: var(--white);
@@ -160,7 +160,7 @@
   line-height: 1;
   font-weight: 700;
   padding: 8px 14px;
-  border-radius: 4px;
+  border-radius: 30px;
   opacity: 0;
   transform: translateY(100px);
   -webkit-transition: all 500ms ease-in-out;
@@ -180,7 +180,7 @@
 
 .add_to_cart a:hover {
   background-color: var(--light-red);
-  color: white;
+  color: white !important;
 }
 
 .menu_section .ads_box {
@@ -238,6 +238,283 @@
   height: 700px;
 }
 
+/* Home Shop 6.0 */
+.shop_section {
+  padding: 100px 0 0;
+  background: var(--yellow);
+}
+
+.shop_section h4 {
+  font-size: 2.375rem;
+  font-weight: 400;
+  color: var(--bg-coffee);
+}
+
+.shop_section h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--light-red);
+}
+
+.shop_section p {
+  font-size: 1.125rem;
+  padding-right: 10%;
+  color: var(--bg-coffee);
+  margin-bottom: 40px;
+}
+
+.shop_section .store {
+  max-width: 40%;
+}
+
+.shop_section .e_shop {
+  text-align: center;
+}
+
+.brand_section {
+  padding: 20px 0 20px;
+  background: var(--light-grey);
+  overflow: hidden;
+}
+
+.brand_section .brand_image {
+  width: 200px;
+  height: 200px;
+}
+
+.carousel.slide .carousel-inner {
+  overflow: unset;
+}
+
+.carousel.slide .carousel-inner .carousel-caption {
+  position: relative;
+  right: unset;
+  left: unset;
+  bottom: unset;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-control-next {
+  right: -40px;
+}
+
+.carousel-control-prev {
+  left: -40px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 2%;
+  color: white;
+}
+
+/* Home Blog 7.0 */
+.blog_section {
+  padding: 60px 0 80px;
+  background: url("../assets/blog/reviews.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.blog_section .user_img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-bottom: 25px;
+}
+
+.blog_section .carousel.slide .carousel-inner .carousel-caption p {
+  font-size: 1.7rem;
+  line-height: 1.45;
+  font-weight: 400;
+  padding: auto;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.blog_section .carousel.slide .carousel-inner .carousel-caption .item_rating i {
+  font-size: 20px;
+  color: var(--yellow);
+  margin-right: 10px;
+}
+
+.blog_section .carousel.slide .carousel-inner .carousel-caption h5 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.blog_section .carousel-indicators {
+  display: flex;
+  bottom: -60px;
+  margin-bottom: 1.5rem;
+}
+
+.blog_section .carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-indent: -999px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 0;
+  background-color: var(--yellow);
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  opacity: .6;
+  transition: opacity .6s ease;
+}
+
+.blog_section .carousel-indicators .active {
+  opacity: 1;
+  background-color: red;
+}
+
+
+/* Home Contact 8.0 */
+
+.contact_section {
+  background: url("../assets/footer/banner-1.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact_section h4 {
+  font-size: 2.375rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.contact_section h2 {
+  font-size: 4.5rem;
+  margin-bottom: 25px;
+}
+
+.contact_section p {
+  width: 70%;
+  margin: 0 auto 30px;
+}
+
+.contact_section a {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--oswald-font);
+}
+
+/* Home Footer 9.0 */
+footer {
+  padding-top: 60px;
+}
+
+footer h5 {
+  color: var(--light-black);
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+footer p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+footer .calling {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--yellow) !important;
+}
+
+footer .calling:hover {
+  color: var(--light-red) !important;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+footer .copy_right {
+  border-top: 1px solid var(--light-grey-2);
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+footer .copy_right ul li span {
+  color: var(--light-red);
+  font-weight: 600;
+}
+
+footer .copy_right ul li {
+  font-size: 1.3rem;
+  padding: 0 10px;
+  position: relative;
+}
+
+footer .copy_right ul li:after {
+  content: "|";
+  padding-left: 11px;
+  position: absolute;
+  top: -1px;
+  right: -10px;
+}
+
+footer .copy_right ul li:last-child:after {
+  display: none;
+}
+
+footer .social-icons li a {
+  color: var(--light-red) !important;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.social-icons li a:hover {
+  color: var(--light-black) !important;
+}
+
+/* Scroll Top */
+
+.scroll_top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  line-height: 2.7rem;
+  text-align: center;
+  background: var(--light-red);
+  border-radius: 35%;
+}
+
+.scroll_top i {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.scroll_top:hover {
+  background: var(--yellow);
+}
+
+.scroll_top:hover i {
+  color: var(--light-black);
+}
+
 @media (max-width: 767px) {
 
   /* Home Hero 1.0 */
@@ -254,6 +531,43 @@
   .bg_parallax_scroll {
     background-attachment: scroll;
     height: 500px;
+  }
+
+  /* Home Shop 6.0 */
+  .shop_section h4 {
+    font-size: 1.8rem;
+  }
+  
+  .shop_section h2 {
+    font-size: 3.75rem;
+  }
+
+  .brand_section {
+    padding: 20px 0 10px;
+  }
+  
+  .brand_section .brand_image {
+    width: 70px;
+    height: auto;
+  }
+
+  .blog_section .carousel.slide .carousel-inner .carousel-caption p {
+    padding: 0 12%;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .blog_section .carousel-control-next, .carousel-control-prev {
+    width: 15%;
+    color: white;
+  }
+
+  .blog_section .carousel-control-next {
+    right: 0px;
+  }
+
+  .blog_section .carousel-control-prev {
+    left: 0px;
   }
 
 }
@@ -290,7 +604,7 @@
     font-size: 2.25rem;
   }
 
-  /* Home Contact 8.0 */
+ /* Home Contact 8.0 */
   .contact_section h2 {
     font-size: 3.5rem;
   }

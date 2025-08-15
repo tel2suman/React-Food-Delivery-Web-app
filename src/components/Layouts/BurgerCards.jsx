@@ -7,7 +7,7 @@ const BurgerCards = ({image, rating, title, paragraph, price, renderRatingIcons}
 
   return (
     <Col lg={4} xl={3} xs={12} md={12} sm={12} className='mb-4'>
-        <Card className='overflow-hidden'>
+        <Card className='overflow-hidden rounded-5'>
             <div className='overflow-hidden'> 
                 <Card.Img variant="top" src={image} />
             </div>

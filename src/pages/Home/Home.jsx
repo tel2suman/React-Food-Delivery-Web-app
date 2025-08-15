@@ -5,6 +5,9 @@ import Banner from "./Banner"
 import About from "./About"
 import Menu from "./Menu"
 import Promotion from "./Promotion"
+import Shop from "./Shop"
+import Testimonial from "./Testimonial"
+import Contact from "./Contact"
 
 
 
@@ -21,6 +24,12 @@ const Home = () => {
           <Menu/>
           {/* Home Promotion Section */}
           <Promotion/>
+          {/* Home Shop Section */}
+          <Shop/>
+          {/* Home Testimonial Section */}
+          <Testimonial/>
+          {/* Home Contact Section */}
+          <Contact/>
         </Layout>
     </>
   )
