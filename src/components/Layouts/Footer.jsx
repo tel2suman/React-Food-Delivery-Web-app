@@ -42,7 +42,7 @@ const Footer = () => {
                     <img src={Logo} alt="Logo" className='img-fluid mb-4 logo w-auto' />
                   </Link>
                 <h5 className='mb-4'>Location</h5>
-                <p><address>5505 Waterford District Dr, Miami, FL 33126 United States</address></p>
+                <p>5505 Waterford District Dr, Miami, FL 33126 United States</p>
               </div>
             </Col>
             <Col sm={6} xl={3} lg={3} md={12} xs={12} className='mb-lg-0 mb-4'>
@@ -91,7 +91,7 @@ const Footer = () => {
       {/* Scroll to Top Button */}
     {isVisible && (
       <div className="scroll_top" onClick={scrollTop}>
-          <i class="bi bi-chevron-double-up"></i>
+          <i className="bi bi-chevron-double-up"></i>
       </div>
     )}
     </>

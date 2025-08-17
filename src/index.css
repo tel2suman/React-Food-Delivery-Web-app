@@ -68,6 +68,7 @@ a {
   transition: all 400ms ease-in-out;
 }
 
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
@@ -119,3 +120,24 @@ a {
   border-color: var(--light-red) !important;
 }
 
+.header-banner {
+  background: linear-gradient(rgb(0 0 0 / 54%), rgb(131 19 19 / 76%)), url(/src/assets/parallax/header-banner.jpg) no-repeat center center;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+}
+
+.header-banner .hero_text h1 {
+  font-family: var(--lilita-font);
+  font-size: 7rem;
+  line-height: 1;
+  padding-top: 4rem;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+}
+
+.header-banner .hero_text p {
+  padding: 0 5%;
+}

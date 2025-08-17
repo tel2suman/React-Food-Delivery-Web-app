@@ -97,6 +97,7 @@
 }
 
 /* Home Menu 3.0 */
+
 .menu_section {
   padding-top: 70px;
 }
@@ -111,6 +112,25 @@
   color: var(--grey);
   padding: 10px 100px;
   font-size: 19px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  font-family: var(--oswald-font);
+  padding: 6px 16px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: 1px solid var(--light-black);
+  border-radius: 20px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .menu_section .item_rating {
@@ -137,8 +157,8 @@
   margin-bottom: 10px;
 }
 .menu_section .card-text {
-  color: var(--grey);
-  font-size: 15px;
+  color: var(--light-black);
+  font-size: 18px;
 }
 .menu_section .menu_price {
   background-color: var(--light-red);
@@ -170,12 +190,29 @@
   transition: all 500ms ease-in-out;
 }
 
+.menu_section .card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
 .menu_section .card:hover .card-img-top {
   transform: scale(1.1);
 }
 .menu_section .card:hover .add_to_cart a {
   transform: translateY(0px);
   opacity: 1;
+}
+
+.menu_section .card:hover{
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  border: 1px solid #c2c2c2;
+  cursor: pointer;
+  box-shadow: var(--bs-box-shadow-lg) !important;
 }
 
 .add_to_cart a:hover {
@@ -568,6 +605,24 @@ footer .social-icons li a {
 
   .blog_section .carousel-control-prev {
     left: 0px;
+  }
+
+  .header-banner {
+    width: 100%;
+    height: 400px;
+}
+
+  .header-banner .hero_text h1 {
+    font-family: var(--lilita-font);
+    font-size: 5rem;
+    line-height: 1;
+    padding-top: 4rem;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+  }
+
+  .header-banner .hero_text p {
+    padding: 0 5%;
   }
 
 }

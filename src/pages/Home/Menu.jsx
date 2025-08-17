@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row, Form } from 'react-bootstrap'
 import Image1 from '../../assets/menu/burger-11.jpg'
 import Image2 from '../../assets/menu/burger-12.jpg'
 import Image3 from '../../assets/menu/burger-13.jpg'
@@ -20,6 +20,7 @@ const mockData = [
     title: "Crispy Chicken",
     paragraph: "Chicken breast, chilli sauce, tomatoes, pickles, coleslaw",
     rating: 5,
+    timing: "15-20 min",
     price: 99.15,
   },
 
@@ -29,6 +30,7 @@ const mockData = [
     title: "Ultimate Bacon",
     paragraph: "House patty, cheddar cheese, bacon, onion, mustard",
     rating: 4.5,
+    timing: "30-40 min",
     price: 99.32,
   },
 
@@ -38,6 +40,7 @@ const mockData = [
     title: "Black Sheep",
     paragraph: "American cheese, tomato relish, avocado, lettuce, red onion",
     rating: 4,
+    timing: "20-30 min",
     price: 69.15,
   },
 
@@ -47,6 +50,7 @@ const mockData = [
     title: "Vegan Burger",
     paragraph: "House patty, cheddar cheese, bacon, onion, mustard",
     rating: 3.5,
+    timing: "30-40 min",
     price: 99.25,
   },
 
@@ -56,6 +60,7 @@ const mockData = [
     title: "Double Burger",
     paragraph: "2 patties, cheddar cheese, mustard, pickles, tomatoes",
     rating: 3.0,
+    timing: "30-40 min",
     price: 59.25,
   },
 
@@ -65,6 +70,7 @@ const mockData = [
     title: "Turkey Burger",
     paragraph: "Turkey, cheddar cheese, onion, lettuce, tomatoes, pickles",
     rating: 3,
+    timing: "30-40 min",
     price: 79.18,
   },
 
@@ -74,6 +80,7 @@ const mockData = [
     title: "Smokey House",
     paragraph: "patty, cheddar cheese, onion, lettuce, tomatoes, pickles",
     rating: 2.5,
+    timing: "30-40 min",
     price: 99.19,
   },
 
@@ -81,8 +88,9 @@ const mockData = [
     id: "0008",
     image: Image8,
     title: "Classic Burger",
-    paragraph: "cheddar cheese, ketchup, mustard, pickles, onion",
+    paragraph: "American cheese, tomato relish, avocado, lettuce, red onion",
     rating: 2.0,
+    timing: "30-40 min",
     price: 89.12,
   },
   // Add more mock data objects as needed
@@ -124,6 +132,20 @@ const Menu = () => {
               </p>
             </Col>
           </Row>
+          <Form>
+            <Row className='mb-5 justify-content-end'>
+              <Col lg={3} md={3} sm={12} xs={12} className='px-0'>
+                <Form.Control
+                  type="text"
+                  placeholder="Search"
+                  className=" mr-sm-2"
+                />
+              </Col>
+              <Col lg={1} md={1} sm={12} xs={12}>
+              <Link to="/" className='btn btn_red w-100 rounded-5 py-2 px-4'>Search</Link>
+              </Col>
+            </Row>
+          </Form>
           <Row>
               {mockData.map((cardData, index )=>(
                 <BurgerCards
@@ -133,6 +155,7 @@ const Menu = () => {
                   paragraph={cardData.paragraph}
                   rating={cardData.rating}
                   price={cardData.price}
+                  timing={cardData.timing}
                   renderRatingIcons ={renderRatingIcons}
                 />
               ))}

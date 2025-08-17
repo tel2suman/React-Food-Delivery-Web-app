@@ -5,7 +5,7 @@ import {Container, Nav, Navbar} from 'react-bootstrap';
 
 import '../../styles/HeaderStyle.css';
 
-import { Link } from 'react-router';
+import { NavLink, Outlet } from 'react-router';
 
 import Logo from '../../assets/logo/logo.png';
 
@@ -28,42 +28,43 @@ const Header = () => {
     <>
       <Navbar expand="lg" className={`${nav == true ? 'sticky' : ''}`}>
       <Container>
-        <Navbar.Brand as={Link} to="/">
-          <Link>
+        <Navbar.Brand>
             <img src={Logo} alt="Logo" className='img-fluid logo w-auto' />
-          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='border-0' />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} className='active' to="/">
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
               Home
-            </Nav.Link>
-            <Nav.Link as={Link} to="/about">
+            </NavLink>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
               About
-            </Nav.Link>
-            <Nav.Link as={Link} to="/menu">
+            </NavLink>
+            <NavLink to="/menu">
               Our Menu
-            </Nav.Link>
-            <Nav.Link as={Link} to="/shop">
+            </NavLink>
+            <NavLink to="/shop">
               Shop
-            </Nav.Link>
-            <Nav.Link as={Link} to="/blog">
+            </NavLink>
+            <NavLink to="/blog">
               Blog
-            </Nav.Link>
-            <Nav.Link as={Link} to="/contact">
+            </NavLink>
+            <NavLink to="/contact">
               Contact
-            </Nav.Link>
-            <Nav.Link as={Link} to="/">
+            </NavLink>
+            <NavLink to="/">
               <div className='cart position-relative top-0'>
-                <i class="bi bi-bag fs-5"></i>
+                <i className="bi bi-bag fs-5"></i>
                 <em className='roundpoint position-absolute top-25 rounded-circle bg-danger text-white'>2</em>
               </div>
-            </Nav.Link>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    <main>
+      <Outlet />
+    </main>
     </>
   )
 }
